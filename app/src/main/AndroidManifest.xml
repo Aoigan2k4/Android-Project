@@ -13,6 +13,21 @@
         android:theme="@style/Theme.LibraryApp"
         tools:targetApi="31">
         <activity
+            android:name=".BorrowBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BorrowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReturnActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChangePasswordActivity"
             android:exported="false" />
         <activity

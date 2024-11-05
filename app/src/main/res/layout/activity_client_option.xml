@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option Page"/>
+
+    <Button
+        android:id="@+id/btn_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrow Books"/>
+
+    <Button
+        android:id="@+id/btn_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Borrowed Books"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Books"/>
+
+    <Button
+        android:id="@+id/btn_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Account"/>
+
+</LinearLayout>
