@@ -110,15 +110,9 @@ public class LoginActivity extends AppCompatActivity {
                             } else {
                                 Toast.makeText(LoginActivity.this, "Unknown role.", Toast.LENGTH_SHORT).show();
                             }
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Role not found.", Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        Toast.makeText(LoginActivity.this, "User data not found.", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    Toast.makeText(LoginActivity.this, "Failed to retrieve user data.", Toast.LENGTH_SHORT).show();
-                }
+                        } 
+                    } 
+                } 
             }
         });
     }
