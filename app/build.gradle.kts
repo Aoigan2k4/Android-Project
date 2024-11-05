@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
@@ -14,7 +15,10 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        buildConfigField("String", "api_key", "\"${System.getenv("api.key")}\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sypnosis" type="id" />
+    <item name="isbn" type="id" />
+    <item name="author" type="id" />
+    <item name="bookImage" type="id" />
+    <item name="searchButton" type="id" />
+</resources>
