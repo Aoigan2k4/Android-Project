@@ -1,5 +1,6 @@
 package com.example.libraryapp;
 import java.io.Serializable;
+
 public class Book implements Serializable {
     private String title;
     private String author;
@@ -38,4 +39,3 @@ public class Book implements Serializable {
         this.isbn = isbn;
     }
 }
-

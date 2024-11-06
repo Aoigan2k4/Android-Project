@@ -28,7 +28,7 @@ public class ClientOptionActivity extends AppCompatActivity {
         btn_borrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ClientOptionActivity.this, BorrowBookActicity.class);
+                Intent intent = new Intent(ClientOptionActivity.this, BorrowBookActivity.class);
                 startActivity(intent);
             }
         });

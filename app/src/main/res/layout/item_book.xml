@@ -6,6 +6,7 @@
     android:padding="12dp"
     android:background="?android:attr/selectableItemBackground">
 
+    <!-- Book Title -->
     <TextView
         android:id="@+id/bookTitle"
         android:layout_width="wrap_content"
@@ -15,6 +16,7 @@
         android:textSize="16sp"
         android:textColor="#000000" />
 
+    <!-- Author -->
     <TextView
         android:id="@+id/bookAuthor"
         android:layout_width="wrap_content"
@@ -33,6 +35,7 @@
         android:textColor="#666666"
         android:paddingBottom="8dp" />
 
+    <!-- Add to Cart Button -->
     <Button
         android:id="@+id/btn_addToCart"
         android:layout_width="wrap_content"
