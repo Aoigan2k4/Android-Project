@@ -13,10 +13,10 @@
         android:theme="@style/Theme.LibraryApp"
         tools:targetApi="31">
         <activity
-            android:name=".BorrowBookActivity"
+            android:name=".activity_borrow.BorrowBookActivity"
             android:exported="false" />
         <activity
-            android:name=".CartActivity"
+            android:name=".activity_borrow.CartActivity"
             android:exported="false" />
         <activity
             android:name=".ClientOptionActivity"

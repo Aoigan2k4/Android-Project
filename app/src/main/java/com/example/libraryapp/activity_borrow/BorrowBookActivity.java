@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.libraryapp.activity_borrow;
 
 
 import android.content.Intent;
@@ -15,6 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 //import com.google.firebase.auth.FirebaseAuth;
 //import com.google.firebase.auth.FirebaseUser;
 
+import com.example.libraryapp.Book;
+import com.example.libraryapp.R;
+import com.example.libraryapp.adapter.BookAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -59,7 +62,7 @@ public class BorrowBookActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("BorrowBookActivity", "View Cart button clicked");
-                Intent intent = new Intent(BorrowBookActivity.this,CartActivity.class);
+                Intent intent = new Intent(BorrowBookActivity.this, CartActivity.class);
                 intent.putExtra("cartList", cartList);
                 startActivity(intent);
             }

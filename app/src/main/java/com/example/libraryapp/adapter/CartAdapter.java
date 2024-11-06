@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.libraryapp.adapter;
 
 
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.libraryapp.Book;
+import com.example.libraryapp.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

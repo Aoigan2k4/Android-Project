@@ -24,6 +24,15 @@
         android:textColor="#666666"
         android:paddingBottom="8dp" />
 
+    <TextView
+        android:id="@+id/bookIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISBN: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingBottom="8dp" />
+
     <Button
         android:id="@+id/btn_addToCart"
         android:layout_width="wrap_content"
