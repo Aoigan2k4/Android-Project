@@ -1,5 +1,7 @@
 package com.example.real_timedbaccount;
 
+import static okhttp3.internal.Internal.instance;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,8 @@ public class User {
     private String username;
     private String password;
     private String confirmPassword;
-    private List<Book> bookshelf;
+    private ArrayList<Book> bookshelf;
+    private ArrayList<Book> cartList;
 
     private User(){}
 
@@ -16,7 +19,8 @@ public class User {
         this.id = id;
         this.username = name;
         this.password = password;
-        this.bookshelf = new ArrayList<Book>();
+        this.bookshelf = new ArrayList<>();
+        this.cartList = new ArrayList<>();
     }
 
     public String getId() {
@@ -43,8 +47,22 @@ public class User {
         this.password = password;
     }
 
-    public List<Book> getBooks (){
+    public ArrayList<Book> getBookshelf() {
         return bookshelf;
     }
+
+    public ArrayList<Book> getCartList() {
+        return cartList;
+    }
+
+    public void addBookToBookshelf(Book book) {
+        bookshelf.add(book);
+    }
+
+    public void removeBookFromBookshelf(Book book) {
+        bookshelf.remove(book);
+    }
+
+
 
 }

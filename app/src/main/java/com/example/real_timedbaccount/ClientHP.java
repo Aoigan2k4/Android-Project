@@ -16,8 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ClientHP extends AppCompatActivity {
     TextView title;
-    Button update, borrow, view, logout,btn_return;
+    Button update, borrow, view, logout,btn_return,bookshelfButton;
     SharedPreferences data;
+    User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class ClientHP extends AppCompatActivity {
         view = findViewById(R.id.Books);
         logout = findViewById(R.id.LogOut);
         btn_return = findViewById(R.id.btn_return);
+        bookshelfButton = findViewById(R.id.Books);
 
         data = getSharedPreferences("UserPrefs", MODE_PRIVATE);
         String username = data.getString("username", "Error");
@@ -55,6 +57,13 @@ public class ClientHP extends AppCompatActivity {
         btn_return.setOnClickListener(view -> {
             // Navigate to the ReturnBookActivity
             Intent intent = new Intent(ClientHP.this, ReturnBookActivity.class);
+            startActivity(intent);
+        });
+
+
+        bookshelfButton.setOnClickListener(view -> {
+            Intent intent = new Intent(ClientHP.this, BookshelfActivity.class);
+//            intent.putExtra("userBookshelf", currentUser.getBookshelf());  // Pass the bookshelf list
             startActivity(intent);
         });
 
