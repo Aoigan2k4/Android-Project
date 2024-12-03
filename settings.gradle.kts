@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LibraryApp"
+rootProject.name = "Real-time DB Account"
 include(":app")
+ 

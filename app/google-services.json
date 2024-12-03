@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "785147234730",
-    "project_id": "libraryapp-bad8f",
-    "storage_bucket": "libraryapp-bad8f.firebasestorage.app"
+    "project_number": "202753546819",
+    "project_id": "real-time-db-account",
+    "storage_bucket": "real-time-db-account.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:785147234730:android:83820a81c52c28e96e43d3",
+        "mobilesdk_app_id": "1:202753546819:android:b659ed48cc03beefc852f6",
         "android_client_info": {
-          "package_name": "com.example.libraryapp"
+          "package_name": "com.example.real_timedbaccount"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC0MRmsZGXHn9b5UXognUZ-tq85yew3qTQ"
+          "current_key": "AIzaSyBfQRM1nm2X-CzmkXjNUUdVsbntPhhBIRs"
         }
       ],
       "services": {
