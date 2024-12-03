@@ -55,6 +55,11 @@
             android:name=".ClientHP"
             android:exported="false"/>
 
+        <activity
+            android:name=".BookshelfActivity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>
