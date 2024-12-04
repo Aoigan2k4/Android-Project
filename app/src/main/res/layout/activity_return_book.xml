@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F5E6F8">
+
+    <!-- Search Bar -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by book name, ID, or author"
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:inputType="text" />
+
+    <!-- GridView for Books -->
+    <GridView
+        android:id="@+id/book_returnGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        tools:listitem="@layout/item_return_book"/>
+
+    <!-- Return Selected Books Button -->
+    <Button
+        android:id="@+id/btnReturnSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Selected Books"
+        android:backgroundTint="#B564BA"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+</LinearLayout>
